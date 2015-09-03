@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/mainlllist"
+                android:gravity="center_horizontal">
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <LinearLayout
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:gravity="center"
+            android:layout_marginRight="-50dp"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginTop="-10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="#ff5722"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="19dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Williamsburg Diner"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:shadowDx="0"
+                    android:shadowDy="2"
+                    android:shadowColor="#5000"
+                    android:textColor="#fff"
+                    android:shadowRadius="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:rotation="180"
+            android:layout_marginRight="-50dp"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginBottom="-10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="@drawable/orange_normal"
+                android:id="@+id/myorderlllist"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="13dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="My Order"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="3dp"
+                    android:shadowDx="0"
+                    android:rotation="180"
+                    android:shadowDy="2"
+                    android:shadowColor="#5000"
+                    android:textColor="#fff"
+                    android:shadowRadius="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

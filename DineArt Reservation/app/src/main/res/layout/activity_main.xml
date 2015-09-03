@@ -1,0 +1,11 @@
+<LinearLayout xmlns:reserve="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    reserve:layout_width="match_parent"
+    reserve:layout_height="match_parent"
+    tools:context=".MainActivity"
+    reserve:id="@+id/main"
+    reserve:orientation="vertical"
+    reserve:gravity="center"
+    reserve:animateLayoutChanges="true">
+
+</LinearLayout>

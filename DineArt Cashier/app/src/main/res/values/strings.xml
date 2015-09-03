@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DineArt Cashier</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_bill">BillActivity</string>
+    <color name="gray1">#a444</color>
+    <color name="gray2">#8444</color>
+</resources>

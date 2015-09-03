@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/mainll"
+                    android:gravity="center_horizontal">
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="If you want anything or if you have any problem, you can click this button and a waiter will arrive at your table for assistance!"
+                    android:textColor="#b555"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:gravity="center"
+                    android:hint="Enter a message here if you want!"
+                    android:textSize="16sp"
+                    android:textColor="#b555"
+                    android:inputType="textCapSentences"
+                    android:id="@+id/waiterMessage"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:text="CALL THE WAITER"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    android:paddingBottom="2dp"
+                    android:textColor="#fff"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/selector_login"
+                    android:onClick="onClickCallWaiter"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:text="CLEAR"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:paddingBottom="2dp"
+                    android:textColor="#fff"
+                    android:layout_marginBottom="100dp"
+                    android:background="@drawable/selector_login"
+                    android:onClick="onClickClear"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        </ScrollView>
+
+
+        <LinearLayout
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:gravity="center"
+            android:layout_marginRight="-50dp"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginTop="-10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="#ff5722"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="19dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Williamsburg Diner"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:shadowDx="0"
+                    android:shadowDy="2"
+                    android:shadowColor="#5000"
+                    android:textColor="#fff"
+                    android:shadowRadius="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:rotation="180"
+            android:layout_marginRight="-50dp"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginBottom="-10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="@drawable/orange_normal"
+                android:id="@+id/myorderll"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="13dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="My Order"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="3dp"
+                    android:shadowDx="0"
+                    android:rotation="180"
+                    android:shadowDy="2"
+                    android:shadowColor="#5000"
+                    android:textColor="#fff"
+                    android:shadowRadius="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

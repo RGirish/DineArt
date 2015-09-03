@@ -1,0 +1,122 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_gravity="center"
+        android:text="Tap the customer's NFC Tag!"
+        android:textSize="16sp"
+        android:textColor="#9444"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="90dp"
+        android:background="#5444"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    
+    <Button
+        android:text="Sync Details"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingBottom="3dp"
+        android:textColor="#fff"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/selector_login"
+        android:onClick="downloadEverything"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Tap"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:onClick="onTap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:gravity="center"
+            android:layout_marginRight="-50dp"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginTop="-10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="#ff5722"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="19dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Williamsburg Diner"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:shadowDx="0"
+                    android:shadowDy="2"
+                    android:shadowColor="#5000"
+                    android:textColor="#fff"
+                    android:shadowRadius="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:gravity="center"
+            android:layout_marginRight="-50dp"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginTop="-17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="#fff"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Pay Point"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#ff5722"
+                    android:shadowRadius="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

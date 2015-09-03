@@ -1,0 +1,108 @@
+<FrameLayout xmlns:bearer="http://schemas.android.com/apk/res/android"
+    bearer:background="#fff"
+    bearer:layout_width="match_parent"
+    bearer:layout_height="match_parent">
+
+    <ScrollView
+        bearer:layout_width="match_parent"
+        bearer:layout_height="wrap_content">
+
+        <LinearLayout
+            bearer:layout_width="match_parent"
+            bearer:layout_gravity="top"
+            bearer:layout_height="wrap_content"
+            bearer:paddingTop="100dp"
+            bearer:orientation="horizontal"
+            bearer:weightSum="2" >
+
+            <LinearLayout
+                bearer:layout_width="0dp"
+                bearer:animateLayoutChanges="true"
+                bearer:layout_height="wrap_content"
+                bearer:id="@+id/orders"
+                bearer:gravity="center_horizontal"
+                bearer:orientation="vertical"
+                bearer:layout_weight="1">
+
+                <TextView
+                    bearer:text="Orders"
+                    bearer:textStyle="bold"
+                    bearer:textSize="18sp"
+                    bearer:layout_width="wrap_content"
+                    bearer:layout_height="wrap_content" />
+
+                <Button
+                    bearer:background="#4444"
+                    bearer:layout_marginBottom="10dp"
+                    bearer:layout_marginTop="10dp"
+                    bearer:layout_width="match_parent"
+                    bearer:layout_height="1dp" />
+
+                </LinearLayout>
+
+            <LinearLayout
+                bearer:layout_width="0dp"
+                bearer:gravity="center_horizontal"
+                bearer:animateLayoutChanges="true"
+                bearer:layout_height="wrap_content"
+                bearer:id="@+id/calls"
+                bearer:orientation="vertical"
+                bearer:layout_weight="1">
+
+                <TextView
+                    bearer:text="Calls"
+                    bearer:textStyle="bold"
+                    bearer:textSize="18sp"
+                    bearer:layout_width="wrap_content"
+                    bearer:layout_height="wrap_content" />
+
+                <Button
+                    bearer:background="#4444"
+                    bearer:layout_marginTop="10dp"
+                    bearer:layout_marginBottom="10dp"
+                    bearer:layout_width="match_parent"
+                    bearer:layout_height="1dp" />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        bearer:background="@android:drawable/dialog_holo_light_frame"
+        bearer:gravity="center"
+        bearer:layout_marginRight="-50dp"
+        bearer:layout_marginLeft="-50dp"
+        bearer:layout_marginTop="-10dp"
+        bearer:layout_width="match_parent"
+        bearer:layout_height="wrap_content"
+        bearer:orientation="vertical">
+
+        <LinearLayout
+            bearer:background="#ff5722"
+            bearer:gravity="center"
+            bearer:layout_width="match_parent"
+            bearer:layout_height="match_parent"
+            bearer:padding="15dp"
+            bearer:orientation="horizontal">
+
+            <TextView
+                bearer:text="Williamsburg Diner Counter 0"
+                bearer:textSize="22sp"
+                bearer:textStyle="bold"
+                bearer:shadowDx="0"
+                bearer:shadowDy="2"
+                bearer:shadowColor="#5000"
+                bearer:textColor="#fff"
+                bearer:shadowRadius="2"
+                bearer:layout_width="wrap_content"
+                bearer:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
